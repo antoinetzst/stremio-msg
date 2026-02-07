@@ -2,7 +2,8 @@ const { addonBuilder, serveHTTP } = require("stremio-addon-sdk");
 
 // --- 🎛️ TON PANNEAU DE CONTRÔLE ---
 const MESSAGE_ACTIF = true;  // Mets 'false' pour désactiver, 'true' pour activer
-const MON_TEXTE = "Bientot la fin du forfait\n Il me coute 3€/mois \n Veux-tu m'aider ?";
+const MON_TEXTE = "Info Service : L'hébergement coûte 3€/mois 💸\nUne petite participation est bienvenue \nMais pas obligatoire. \nBon film ! 🍿";
+
 // ------------------------------------
 
 const builder = new addonBuilder({
