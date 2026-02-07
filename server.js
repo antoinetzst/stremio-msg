@@ -1,21 +1,32 @@
 const { addonBuilder, serveHTTP } = require("stremio-addon-sdk");
 
+// --- 🎛️ TON PANNEAU DE CONTRÔLE ---
+const MESSAGE_ACTIF = false;  // Mets 'false' pour désactiver, 'true' pour activer
+const MON_TEXTE = "⚠️ MESSAGE ACTUEL (Maintenance, Info, etc.)";
+// ------------------------------------
+
 const builder = new addonBuilder({
     id: "org.monmessage.addon",
-    version: "1.0.0",
-    name: "Message Addon",
-    description: "Affiche un message informatif",
+    version: "1.0.1",
+    name: "INFO Addon",
+    description: "Message informatif",
     resources: ["stream"],
     types: ["movie", "series"],
     catalogs: []
 });
 
 builder.defineStreamHandler(args => {
+    // Si l'interrupteur est sur FALSE, on ne renvoie rien (le silence complet)
+    if (!MESSAGE_ACTIF) {
+        return Promise.resolve({ streams: [] });
+    }
+
+    // Sinon, on affiche le message
     return Promise.resolve({
         streams: [
             {
                 name: "INFO",
-                title: "⚠️ MESSAGE DE TEST",
+                title: MON_TEXTE,
                 externalUrl: "https://stremio.com"
             }
         ]
@@ -24,3 +35,4 @@ builder.defineStreamHandler(args => {
 
 const port = process.env.PORT || 7000;
 serveHTTP(builder.getInterface(), { port: port });
+console.log(`L'addon tourne sur le port ${port}`);
