@@ -2,7 +2,7 @@ const { addonBuilder, serveHTTP } = require("stremio-addon-sdk");
 
 // --- 🎛️ TON PANNEAU DE CONTRÔLE ---
 const MESSAGE_ACTIF = false;  // Mets 'false' pour désactiver, 'true' pour activer
-const MON_TEXTE = "⚠️ MESSAGE ACTUEL (Maintenance, Info, etc.)";
+const MON_TEXTE = "⚠️ Mon forfait arrive bientôt à échéance ! Aide moi à payer PLZ";
 // ------------------------------------
 
 const builder = new addonBuilder({
@@ -25,7 +25,7 @@ builder.defineStreamHandler(args => {
     return Promise.resolve({
         streams: [
             {
-                name: "INFO",
+                name: "MSG",
                 title: MON_TEXTE,
                 externalUrl: "https://stremio.com"
             }
