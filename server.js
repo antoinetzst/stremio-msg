@@ -2,7 +2,7 @@ const { addonBuilder, serveHTTP } = require("stremio-addon-sdk");
 
 // --- 🎛️ TON PANNEAU DE CONTRÔLE ---
 const MESSAGE_ACTIF = true;  // Mets 'false' pour désactiver, 'true' pour activer
-const MON_TEXTE = "⚠️ Mon forfait arrive bientôt à échéance ! Aide moi à payer PLZ";
+const MON_TEXTE = "⚠️ Mon forfait arrive bientôt à échéance ! \n Aide moi à payer PLZ";
 // ------------------------------------
 
 const builder = new addonBuilder({
