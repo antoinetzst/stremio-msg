@@ -2,7 +2,7 @@ const { addonBuilder, serveHTTP } = require("stremio-addon-sdk");
 
 // --- 🎛️ TON PANNEAU DE CONTRÔLE ---
 const MESSAGE_ACTIF = true;  // Mets 'false' pour désactiver, 'true' pour activer
-const MON_TEXTE = "⚠️ Mon forfait arrive bientôt à échéance ! \n Aide moi à payer PLZ";
+const MON_TEXTE = "Bientot la fin du forfait\n Il me coute 3€/mois \n Veux-tu m'aider ?";
 // ------------------------------------
 
 const builder = new addonBuilder({
@@ -25,7 +25,7 @@ builder.defineStreamHandler(args => {
     return Promise.resolve({
         streams: [
             {
-                name: "MSG",
+                name: "⚠️",
                 title: MON_TEXTE,
                 externalUrl: "https://www.paypal.com/paypalme/atagah"
             }
