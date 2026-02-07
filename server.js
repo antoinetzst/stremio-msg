@@ -25,7 +25,7 @@ builder.defineStreamHandler(args => {
     return Promise.resolve({
         streams: [
             {
-                name: "⚠️",
+                name: "⚠️ INFO",
                 title: MON_TEXTE,
                 externalUrl: "https://www.paypal.com/paypalme/atagah"
             }
