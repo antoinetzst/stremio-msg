@@ -1,0 +1,32 @@
+[
+  {
+    "id": "don_standard",
+    "active": true,
+    "text": "💸 L'hébergement coûte 3€/mois.\nUne participation est bienvenue !\nBon film 🍿 - Antoine",
+    "url": "https://www.paypal.com/paypalme/atagah",
+    "startDate": null,
+    "endDate": null,
+    "probability": 1,
+    "frequency": 0
+  },
+  {
+    "id": "promo_noel",
+    "active": true,
+    "text": "🎄 Joyeux Noël ! \nSi tu as aimé l'addon cette année, pense au petit cadeau 🎁",
+    "url": "https://www.paypal.com/paypalme/atagah",
+    "startDate": "2024-12-01",
+    "endDate": "2024-12-31",
+    "probability": 0.5,
+    "frequency": 0
+  },
+  {
+    "id": "message_rare",
+    "active": true,
+    "text": "🍀 Tu as trouvé le message rare (1 chance sur 10) !",
+    "url": "https://www.google.com",
+    "startDate": null,
+    "endDate": null,
+    "probability": 0.1,
+    "frequency": 0
+  }
+]
