@@ -6,7 +6,7 @@
     "url": "https://www.paypal.com/paypalme/atagah",
     "startDate": null,
     "endDate": null,
-    "probability": 1,
+    "probability": 0.5,
     "frequency": 0
   },
   {
@@ -18,15 +18,16 @@
     "endDate": "2024-12-31",
     "probability": 0.5,
     "frequency": 0
-  },
+  }
+  ,
   {
-    "id": "message_rare",
+    "id": "promo_noel",
     "active": true,
-    "text": "🍀 Tu as trouvé le message rare (1 chance sur 10) !",
-    "url": "https://www.google.com",
-    "startDate": null,
-    "endDate": null,
-    "probability": 1,
+    "text": "🥰 Joyeuses St Valentin \nSi tu as aimé l'addon cette année, pense au petit cadeau 🎁",
+    "url": "https://www.paypal.com/paypalme/atagah",
+    "startDate": "2026-02-08",
+    "endDate": "2026-02-15",
+    "probability": 0.5,
     "frequency": 0
   }
 ]
