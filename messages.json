@@ -6,8 +6,8 @@
     "url": "https://www.paypal.com/paypalme/atagah",
     "startDate": null,
     "endDate": null,
-    "probability": 0,
-    "frequency": 3
+    "probability": 0.33,
+    "frequency": 0
   },
   {
     "id": "promo_noel",
