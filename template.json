@@ -1,11 +1,11 @@
 {
   "metadata": {
     "id": "antoine-v1-2026-03-06.09-58-16-oupqloh",
-    "name": "Configuration de base",
-    "description": "Source",
+    "name": "Antoine Web Stream",
+    "description": "Le but est de faciliter la mise à jours de la configuration.",
     "source": "external",
     "author": "sdfgh",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "category": "Debrid",
     "serviceRequired": false,
     "setToSaveInstallMenu": true
