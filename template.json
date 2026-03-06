@@ -13,8 +13,8 @@
   "config": {
     "trusted": false,
     "showChanges": true,
-    "addonName": "Antoine",
-    "addonLogo": "",
+    "addonName": "Antoine Web Stream",
+    "addonLogo": "https://github.com/antoinetzst/stremio-msg/blob/main/Gemini_Generated_Image_cipv6ucipv6ucipv.png?raw=true",
     "excludedResolutions": [],
     "includedResolutions": [],
     "requiredResolutions": [],
