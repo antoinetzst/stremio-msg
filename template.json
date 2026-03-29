@@ -2,10 +2,10 @@
   "metadata": {
     "id": "zert-2026-03-29.09-52-20-nrz70cq",
     "name": "Configuration d'Antoine / A partager",
-    "description": "PATCH NOTE MARS 2026 : Modification du serveur Stream-Fusion",
+    "description": "PATCH NOTE MARS 2026 : Modification du serveur Stream-Fusion V2",
     "source": "external",
     "author": "Antoine",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "category": "Debrid",
     "serviceRequired": false,
     "setToSaveInstallMenu": true
