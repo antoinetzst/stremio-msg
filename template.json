@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "id": "zqesrdftgh-2026-03-06.15-43-45-2rj3ekc",
-    "name": "zqesrdftgh",
-    "description": "éaezrtg",
+    "id": "zert-2026-03-29.09-52-20-nrz70cq",
+    "name": "zert",
+    "description": "zaert",
     "source": "external",
-    "author": "zesrdftgh",
+    "author": "zertf",
     "version": "1.0.0",
     "category": "Debrid",
     "serviceRequired": false,
@@ -343,33 +343,6 @@
         }
       },
       {
-        "type": "streamfusion",
-        "instanceId": "b5c",
-        "enabled": true,
-        "options": {
-          "name": "StreamFusion",
-          "timeout": 10000,
-          "resources": [
-            "stream",
-            "catalog",
-            "meta"
-          ],
-          "torboxSearch": true,
-          "torboxUsenet": false,
-          "catalogs": [
-            "yggtorrent",
-            "yggflix"
-          ],
-          "torrenting": false,
-          "torrentProviders": [
-            "publicCacheServer",
-            "zilean"
-          ],
-          "mediaTypes": [],
-          "streamFusionApiKey": "<template_placeholder>"
-        }
-      },
-      {
         "type": "mediafusion",
         "instanceId": "620",
         "enabled": true,
@@ -541,6 +514,31 @@
           "mediaTypes": [],
           "orionApiKey": "<template_placeholder>"
         }
+      },
+      {
+        "type": "streamfusion",
+        "instanceId": "c2e",
+        "enabled": true,
+        "options": {
+          "name": "StreamFusion",
+          "timeout": 30000,
+          "resources": [
+            "stream",
+            "catalog",
+            "meta"
+          ],
+          "url": "https://streamfusion.stremio-epsilon.ca/",
+          "torrentProviders": [
+            "publicCacheServer",
+            "zilean"
+          ],
+          "catalogs": [
+            "yggtorrent"
+          ],
+          "torrenting": false,
+          "mediaTypes": [],
+          "streamFusionApiKey": "<template_placeholder>"
+        }
       }
     ],
     "catalogModifications": [
@@ -556,29 +554,7 @@
         "addonName": "TorBox"
       },
       {
-        "id": "b5c791b.latest_movies",
-        "type": "movie",
-        "name": "Yggflix",
-        "shuffle": false,
-        "enabled": true,
-        "usePosterService": true,
-        "hideable": true,
-        "searchable": false,
-        "addonName": "StreamFusion"
-      },
-      {
-        "id": "b5c791b.latest_tv_shows",
-        "type": "series",
-        "name": "Yggflix",
-        "shuffle": false,
-        "enabled": true,
-        "usePosterService": true,
-        "hideable": true,
-        "searchable": false,
-        "addonName": "StreamFusion"
-      },
-      {
-        "id": "b5c791b.recently_added_movies",
+        "id": "c2e791b.recently_added_movies",
         "type": "movie",
         "name": "YGGtorrent - Récemment Ajoutés",
         "shuffle": false,
@@ -589,7 +565,7 @@
         "addonName": "StreamFusion"
       },
       {
-        "id": "b5c791b.recently_added_tv_shows",
+        "id": "c2e791b.recently_added_tv_shows",
         "type": "series",
         "name": "YGGtorrent - Récemment Ajoutées",
         "shuffle": false,
