@@ -2,7 +2,7 @@
   "metadata": {
     "id": "zert-2026-03-29.09-52-20-nrz70cq",
     "name": "Configuration d'Antoine / A partager",
-    "description": "PATCH NOTE MARS 2026 : Modification du serveur Stream-Fusion V2",
+    "description": "PATCH NOTE AVRIL 2026 : Suppression du catalogue TORBOX",
     "source": "external",
     "author": "Antoine",
     "version": "1.0.2",
@@ -14,11 +14,19 @@
     "trusted": false,
     "showChanges": true,
     "addonName": "Antoine",
-    "excludedResolutions": [],
+    "appliedTemplates": [
+      {
+        "id": "zert-2026-03-29.09-52-20-nrz70cq",
+        "version": "1.0.2",
+        "url": "https://raw.githubusercontent.com/antoinetzst/stremio-msg/refs/heads/main/template.json"
+      }
+    ],
+    "excludedResolutions": [
+      "2160p"
+    ],
     "includedResolutions": [],
     "requiredResolutions": [],
     "preferredResolutions": [
-      "2160p",
       "1440p",
       "1080p",
       "720p",
@@ -245,11 +253,6 @@
     "precacheSelector": "count(cached(streams)) == 0 ? uncached(streams) : []",
     "services": [
       {
-        "id": "alldebrid",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
         "id": "torbox",
         "enabled": true,
         "credentials": {}
@@ -260,12 +263,32 @@
         "credentials": {}
       },
       {
+        "id": "alldebrid",
+        "enabled": false,
+        "credentials": {}
+      },
+      {
         "id": "premiumize",
         "enabled": false,
         "credentials": {}
       },
       {
         "id": "debridlink",
+        "enabled": false,
+        "credentials": {}
+      },
+      {
+        "id": "stremio_nntp",
+        "enabled": false,
+        "credentials": {}
+      },
+      {
+        "id": "nzbdav",
+        "enabled": false,
+        "credentials": {}
+      },
+      {
+        "id": "altmount",
         "enabled": false,
         "credentials": {}
       },
@@ -290,32 +313,17 @@
         "credentials": {}
       },
       {
+        "id": "debrider",
+        "enabled": false,
+        "credentials": {}
+      },
+      {
         "id": "pikpak",
         "enabled": false,
         "credentials": {}
       },
       {
         "id": "seedr",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "debrider",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "stremio_nntp",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "nzbdav",
-        "enabled": false,
-        "credentials": {}
-      },
-      {
-        "id": "altmount",
         "enabled": false,
         "credentials": {}
       },
@@ -370,8 +378,7 @@
           "timeout": 10000,
           "resources": [
             "stream",
-            "meta",
-            "catalog"
+            "meta"
           ],
           "mediaTypes": []
         }
@@ -538,6 +545,20 @@
           "torrenting": false,
           "mediaTypes": [],
           "streamFusionApiKey": "<template_placeholder>"
+        }
+      },
+      {
+        "type": "custom",
+        "instanceId": "695",
+        "enabled": true,
+        "options": {
+          "name": "Baguettio",
+          "manifestUrl": "https://baguettio.org/eyJVU0VSX0lEIjoiQW50b2luZSIsIlRPUkJPWF9LRVkiOiJlZWM3NjM4MS1iYTQyLTQ1ZTAtODNhMi00ZGEwNWFiM2ExMWUiLCJUTURCX1NIQVJFRCI6dHJ1ZSwiQUlPIjpmYWxzZSwiQ0FDSEVfT05MWSI6dHJ1ZSwiVFJBQ0tFUlNfU1RBVFMiOmZhbHNlLCJHTE9CQUxfQ0FDSEVfTUFHTkVUIjpmYWxzZSwiVFJfWUdHIjp0cnVlLCJUUl9DNDExX0FQSUtFWSI6IjZjNjQxMjk2MDVhNzdkOTI0MmRmY2U4ZWJjNjQ4ODYzNzlhYjM1NTZlNTY1ZGMzNjIxMDNlYTZkMGM3ZjQxNDIiLCJDNDExX01BR05FVF9PTkxZIjpmYWxzZSwiRVhDTFVERURfUkVTT0xVVElPTlMiOlsiMjE2MHAiXSwiRVhDTFVERURfTEFOR1VBR0VTIjpbInZmcSJdLCJFWENMVURFRF9RVUFMSVRZIjpbXX0=/manifest.json",
+          "timeout": 30000,
+          "resources": [],
+          "mediaTypes": [],
+          "libraryAddon": false,
+          "resultPassthrough": false
         }
       }
     ],
