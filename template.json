@@ -5,7 +5,7 @@
     "description": "PATCH NOTE AVRIL 2026 : Suppression du catalogue TORBOX",
     "source": "external",
     "author": "Antoine",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "category": "Debrid",
     "serviceRequired": false,
     "setToSaveInstallMenu": true
